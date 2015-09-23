@@ -23,7 +23,4 @@ void draw() {
     y1 = 25;
     x1 = 25;
   }
-  fill(y1, 480, 480);
-  noStroke();
-  ellipse (x1, y1, 20, 20);
 }
