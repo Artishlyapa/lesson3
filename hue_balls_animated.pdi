@@ -1,0 +1,29 @@
+int x1 = 25; 
+int y1 = 25;
+
+void setup() {
+  background (250);
+  size (500, 500);
+}
+
+void draw() {
+  colorMode(HSB, 480);
+  fill(y1, 480, 480);
+  noStroke();
+  ellipse (x1, y1, 20, 20);
+  if (x1 < 475) {
+    x1 += 25;
+  } else {
+    y1 = y1 + 25;
+    x1 = 25;
+  }
+  if (y1 > 475) {
+    colorMode(RGB, 100);
+    background (100);
+    y1 = 25;
+    x1 = 25;
+  }
+  fill(y1, 480, 480);
+  noStroke();
+  ellipse (x1, y1, 20, 20);
+}
